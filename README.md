@@ -1,5 +1,6 @@
 # Development Notes (for future developers) - a comprehensive guide to how this website works
-## README.md
+## Current filepath: ~/README.md
+## Current status: in-progress
 
 Hi! This README is intended for future developers of this website. It presumes a basic understanding of:
 
@@ -84,6 +85,6 @@ This [MDN web doc](https://developer.mozilla.org/en-US/docs/Learn/Common_questio
 - `.gitignore` – Are there any files that were excluded from Git?
 - `LICENSE` – Are you adhering by the rules of the GPL-3.0 license (or any other additional legal requirements)? 
 
->My local jurisdiction is NSW, Australia, but I'd also suggest looking at US for especially with DMCA, GPL, Git, and hosting services such as Heroku and Netlify if you're concerned, as well as EU GDPR.
+>My local jurisdiction is NSW, Australia, but I'd also suggest looking at US for especially with DMCA, GPL, Git, and hosting services such as Heroku and Netlify if you're concerned, as well as EU GDPR and India, where this Discord server is located.
 
 Once you're happy with your development environment, you can proceed to the next section!
