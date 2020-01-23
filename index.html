@@ -9,37 +9,92 @@ Made with ❤️ and 🐼 by Adrian W (aidswidjaja#2805) under the GPL-3.0 licen
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+  body {
+    background-image: green;
+  }
+</style>
+
+<!-- Background Image Randomiser courtesy of Paul Lockett https://paul-lockett.co.uk/randombackground.html REQUIRES JAVASCRIPT AND CSS-->
+<!-- Responsive Background Image courtesy of Jennifer Kyrnin https://www.lifewire.com/responsive-background-images-3467001 REQUIRES CSS3-->
+
+<script type="text/javascript">
+  function backgr(){
+    var randimg = Math.floor(Math.random()*3); // change (Math.random()*x) and replace x with the number of images – otherwise you will occassionally get blank backgrounds
+    if (randimg==0){
+    document.getElementById('bod').className="bg1";
+    }
+    else if (randimg==1){
+    document.getElementById('bod').className="bg2";
+    }
+    else if (randimg==2){
+    document.getElementById('bod').className="bg3";
+    }
+  }
+</script>
+  
+<style type="text/css">
+  .bg1 {
+      background-image: url(res/nachos.jpg);     /* Filepath to your image */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      background-size: cover; 
+  }
+  .bg2 {
+      background-image: url(res/madeinabyss.jpg); /* Filepath to your image */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      background-size: cover; 
+  }
+  .bg3 {
+      background-image: url(res/kiminonawa.jpg);  /* Filepath to your image */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      background-size: cover; 
+      color: white;
+  }
+  </style>
+
 </head>
 
-<body>
+<body id="bod" onload="backgr()">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <br><br><br><br><br><br>
+  <h1>Website under construction. Contact aidswidjaja#2805 on Discord for more information.</h1>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body">
 </html>

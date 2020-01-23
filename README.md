@@ -1,6 +1,10 @@
+# Lively
+
+a cool website, I guess.
+
 # Development Notes (for future developers) - a comprehensive guide to how this website works
-## Current filepath: ~/README.md
-## Current status: in-progress
+#### Current filepath: ~/README.md
+#### Current status: in-progress
 
 Hi! This README is intended for future developers of this website. It presumes a basic understanding of:
 
@@ -78,7 +82,7 @@ This [MDN web doc](https://developer.mozilla.org/en-US/docs/Learn/Common_questio
 
 #### Other things to note:
 
-- Web browser for testing? I recommend Firefox Developer Edition, Chrome/Chromium Dev channel – and Safari (iOS), Chrome Dev channel (Android)
+- Web browser for testing. I recommend: Firefox Developer Edition (Desktop); Chrome/Chromium Dev channel (Desktop); Safari (iOS); Chrome Dev channel (Android)
 - Security vulnerabilities. It might be better to process sensitive information offsite.
 - Already implemented (but unused features). At the time of writing, I intended to develop this site for another developer to easily take over and continue work on.
 - Already implemented analytics. Check through the code and see if there are any variables that need to be changed. You also might need to investigate environment variables that may have been used but not documented.
