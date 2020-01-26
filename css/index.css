@@ -8,7 +8,7 @@ https://github.com/aidswidjaja
 html, body {
     margin: 0;
     padding: 0;
-    height: 110%;
+    height: 100vh;
 }
 
 .bg {
