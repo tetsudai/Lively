@@ -5,13 +5,9 @@ https://github.com/aidswidjaja
 
 /* MASTER */
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-}
-
-html {
     height: 100%;
 }
 
@@ -19,6 +15,9 @@ html {
     background-position: center center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-color: #343538;
 }
@@ -26,7 +25,7 @@ html {
 /* BACKGROUNDS */
 /*
 https://codepen.io/theiwaz/pen/vybjc
-See issue #2 on GitHub (aidswidjaja/Lively)
+See issue #2 and #12 on GitHub (aidswidjaja/Lively)
 Android/Chromium bugs: https://issuetracker.google.com/issues/36908439, https://bugs.chromium.org/p/chromium/issues/detail?id=344338
 */
 
