@@ -97,6 +97,7 @@ and the filepath is relative to the current directory. See README (Development N
 }
 .bg11 {
     background-image: url(../res/juu-ichi.jpg) !important;  
+    background-color: papayawhip !important;  
 	color: #ffffff !important;
 }
 .bg12 {
