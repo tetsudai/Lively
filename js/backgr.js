@@ -1,11 +1,16 @@
 // Made with ❤️ and 🐼 by Adrian W (aidswidjaja#2805) under the GPL-3.0 license. © 2020
 // https://github.com/aidswidjaja
 
-// The following JS function `backgr()` is onload(ed) in the `<body>` tag. 
+// The following JS function `backgr()` is on`load`(ed) in the `<body>` tag. 
 // Unfortunately, this function isn't very pretty, but is the only working solution I know of that can assign custom CSS to each image.
 // If you would like to make this code more elegant, maybe it would be easier to assign a random IntValue out of # of images as is already shown below with `Math.random()*x`.
 // Then, proceed to assign each CSS class(es) a integer, and find a way to make the integers go yay???
 // I'm not sure about the syntax for this, so maybe this is a good enhancement to fix in the future.
+
+// To avoid image load fail on poor connections, consider replacing `onload` with `window.onload`
+// See https://www.tutorialspoint.com/How-do-I-call-a-JavaScript-function-on-page-load.
+
+// Credit: https://paul-lockett.co.uk/randombackground.html
 
 function backgr(){
     var randimg = Math.floor(Math.random()*13); // change (Math.random()*x) and replace x with the number of images – otherwise you will occassionally get blank backgrounds

@@ -1,6 +1,6 @@
-# Lively
+# Lively Discord Website
 
-a cool website, I guess.
+Contact aidswidjaja#2805 on Discord for more information.
 
 # Development Notes (for future developers) - a comprehensive guide to how this website works
 #### Current filepath: ~/README.md
@@ -8,10 +8,10 @@ a cool website, I guess.
 
 Hi! This README is intended for future developers of this website. It presumes a basic understanding of:
 
-- HTML5, JSON, CSS3 and JS
+- HTML5, JSON, CSS3, JS and DOM [(Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - Bootstrap 4 and HTML5 Boilerplate
 - CDNs for scripts and images
-- Static website hosting on GitHub Pages and Heroku
+- Static website hosting on GitHub Pages, Netlify and Heroku
 - Git on the command line (you may be able to use SVN but this will not be covered in this README)
 - Unix terminal usage
 
@@ -23,12 +23,20 @@ If you're a standard end user, this guide isn't for you. Check with the owner of
 
 ### Table of Contents
 
+As of 27 Jan, this documentation is a **Work in Progress**. It is not complete, but will be completed sometime in the foreseeable future.
+
 - Background
 - Getting started and dependencies
+    - Find the most recent version of this website
+    - Deploying this site on your local production machine
+    - Other things to note
 - Layout
+    - Layout
 - Mobile responsiveness
 - CDN link descriptions
 - Hosting
+
+***
 
 ### Background
 
@@ -80,7 +88,7 @@ If you are using/have installed Python - use `SimpleHTTPServer` or `http.server`
 
 This [MDN web doc](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) has great information on web servers and how to host this website on your development machine.
 
-#### Other things to note:
+#### Other things to note
 
 - Web browser for testing. I recommend: Firefox Developer Edition (Desktop); Chrome/Chromium Dev channel (Desktop); Safari (iOS); Chrome Dev channel (Android)
 - Security vulnerabilities. It might be better to process sensitive information offsite.
@@ -92,3 +100,116 @@ This [MDN web doc](https://developer.mozilla.org/en-US/docs/Learn/Common_questio
 >My local jurisdiction is NSW, Australia, but I'd also suggest looking at US for especially with DMCA, GPL, Git, and hosting services such as Heroku and Netlify if you're concerned, as well as EU GDPR and India, where this Discord server is located.
 
 Once you're happy with your development environment, you can proceed to the next section!
+
+***
+
+### Layout
+
+This website uses a traditional splash screen, followed by text/image content on different pages/areas of the site. 
+
+As of 27 Jan 2020 Flexbox usage is not planned for the site, but this may change in the future.
+
+#### Background Image
+
+See [the original documentation from which the source code derives from.](https://paul-lockett.co.uk/randombackground.html)
+
+14 high-resolution background images are stored in the `res` folder. There is also an image credits Markdown document and a `test` folder which was used for initial testing. The source for these images can be found in the `assets` folder which contains the original .zip file.
+
+A function defined in `js/backgr.js` executes the following instruction set :
+- Uses the [`Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) function to find a integer between 0 and 13 (inclusive).
+- This integer, declared as `randimg` is run through a number of `if else` statements. 
+- If `randimg == x` where x is the defined integer, then:
+    - Wait for the rest of the document to load (see comments in `backgr.js` for further explanation of `onload` and potential better solutions).
+    - Use the [`document.getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) to locate the `bod` ID which in this case, is assigned the `<body>` tag in `index.html`.
+    - Locate the class selector attribute in the `index.css` stylesheet.
+    - Proceed to `onload` the classes into the `<body>` tag in `index.html`
+
+`document.getElementById` loads class names `bgx` and `bg`, where `x` is an integer between 1 and 14 inclusive. 
+- `bgx` defines `background-image: url(...` and other background-specific attributes.
+- `bg` are common attributes that apply to all backgrounds.
+
+The problem with `bg` is that it uses the following CSS attributes:
+
+```CSS
+.bg {
+    background-position: center center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #343538;
+}
+```
+
+There are a number of issues with the above setup on it's own:
+- `background-attachment: fixed` is not supported on Android - see [AOSP Issue 36908439 on Google Issue Tracker](https://issuetracker.google.com/issues/36908439)
+- `background-attachment: fixed` when used in conjunction with `background-size: cover` is not supported on Safari - see [Can I use `background-attachment`?](https://caniuse.com/#search=background-attachment)
+- `background-attachment: fixed` does not render properly on Chromium for Android - see [Chromium Issue 344338: Bad rendering of fixed background on Android, even with --disable-accelerated-fixed-root-background](https://bugs.chromium.org/p/chromium/issues/detail?id=344338)
+
+That's why we added extra attributes to `html` and `body`, as per the solution in the [CSS Tricks forum archives](https://css-tricks.com/forums/topic/full-page-backgrounds-on-ios-background-size-cover/page/2/#post-134002):
+```CSS
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Used to ensure that the background fills the entire height of the parent element - vh is not used due to compatibility issues on WebKit */
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: auto; /* Changed from scroll to auto to remove white bar at the bottom of the webpage */
+    -webkit-overflow-scrolling: touch;
+}
+```
+
+For some reason, this solution seems to work – I'm not sure why, but it was last tested on 27 January for the following configurations.
+
+##### Supported configurations
+
+**DESKTOP:**
+- Chrome Version 79.0.3945.130 (Official Build) (64-bit)
+- Firefox Developer Edition 73.0b8 (64-bit)
+- Opera 63.0.3368.94
+
+**Desktop configuration:**
+```
+ProductName:	Mac OS X
+ProductVersion:	10.14.6
+BuildVersion:	18G103
+```
+
+**ANDROID:**
+- Chrome for Android 79.0.3945.136
+- Firefox Nightly for Android 68.5a1 (2020-01-20)
+- Firefox Preview Nightly 200126 6:00 (Build #20260605) 29.0.0, c3ba2ed42, GV: 74.0a1-20200123095433, Sunday 1/26 @ 6:05 AM
+
+**Android configuration:**
+```
+Android 9
+SM-A105G 
+Build/PPR1.180610.011
+(64-bit CPU, 32-bit arch) - yes, that means no Pokemon Masters for me I get it okay???
+```
+
+**iOS:**
+- Safari on iOS 12, iPhone 6
+
+Although the following have not been tested, I am expecting compatibility with:
+
+- Chrome for iOS
+- Chromium-based Edge
+
+I cannot guarantee compatibility with:
+
+- Internet Explorer 9<
+- Microsoft non-Chromium based Edge
+
+however, they should in theory work because they support `background-attachment` and `background-size`.
+
+***
+
+_To be continued_
