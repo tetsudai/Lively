@@ -47,57 +47,70 @@ and the filepath is relative to the current directory. See README (Development N
 
 .bg1 { 
     background-image: url(../res/ichi.jpg) !important;
-	color: darkred !important;
+    background-color: red !important;
+	color: #ffffff !important;
 }
 .bg2 {
     background-image: url(../res/ni.jpg) !important; 
-    color: blue !important;
+    background-color: blue !important;
+    color: #ffffff !important;
 }
 .bg3 {
     background-image: url(../res/san.jpg) !important;  
-	color: yellow !important;
+    background-color: green !important;
+	color: #ffffff !important;
 }
 .bg4 {
     background-image: url(../res/yon.jpg) !important;  
-	color: green !important;
+    background-color: yellow !important;
+	color: #343538 !important;
 }
 .bg5 {
     background-image: url(../res/go.jpg) !important;  
-	color: purple !important;
+    background-color: orange !important;
+	color: #ffffff !important;
 }
 .bg6 {
     background-image: url(../res/roku.jpg) !important;  
-	color: orange !important;
+    background-color: purple !important;
+	color: #ffffff !important;
 }
 .bg7 {
-    background-image: url(../res/nana.jpg) !important;  
-	color: aqua !important;
+    background-image: url(../res/nana.jpg) !important; 
+    background-color: pink !important; 
+	color: #343538 !important;
 }
 .bg8 {
-    background-image: url(../res/hachi.jpg) !important;  
-	color: palegreen !important;
+    background-image: url(../res/hachi.jpg) !important;
+    background-color: fuchsia !important;  
+	color: #ffffff !important;
 }
 .bg9 {
-    background-image: url(../res/kyuu.jpg) !important;  
-	color: palevioletred !important;
+    background-image: url(../res/kyuu.jpg) !important;
+    background-color: skyblue !important;  
+	color: #ffffff !important;
 }
 .bg10 {
-    background-image: url(../res/juu.jpg) !important;  
-	color: saddlebrown !important;
+    background-image: url(../res/juu.jpg) !important;
+    background-color: darkred !important;  
+	color: #ffffff !important;
 }
 .bg11 {
     background-image: url(../res/juu-ichi.jpg) !important;  
-	color: fuchsia !important;
+	color: #ffffff !important;
 }
 .bg12 {
-    background-image: url(../res/juu-ni.jpg) !important;  
-	color: pink !important;
+    background-image: url(../res/juu-ni.jpg) !important;
+    background-color: mediumslateblue !important;  
+	color: #343538 !important;
 }
 .bg13 {
-    background-image: url(../res/juu-san.jpg) !important;  
-	color: orangered !important;
+    background-image: url(../res/juu-san.jpg) !important;
+    background-color: turquoise !important;  
+	color: #ffffff !important;
 }
 .bg14 {
-    background-image: url(../res/juu-yon.jpg) !important;  
-	color: lightskyblue !important;
+    background-image: url(../res/juu-yon.jpg) !important;
+    background-color: midnightblue !important;  
+	color: #ffffff !important;
 }
