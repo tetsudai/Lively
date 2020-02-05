@@ -38,10 +38,6 @@ https://github.com/aidswidjaja
 
 <body id="bod" onload="backgr()">
 
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
   <!-- Navbar -->
 
   <nav class="navbar" id="topnav">
@@ -49,23 +45,31 @@ https://github.com/aidswidjaja
       <img src="res/logo.png" width="64" height="64" alt="Lively logo">
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
-      </div>
+    <!-- todo: finish Navbar -->
+
   </nav>
 
   <!-- Splash Text -->
 
-  <div id="splash">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class ="d-none d-lg-flex" id="splash"> <!-- on screens less wide than lg breakpoint (as defined by Bootstrap), hide the splash div-->
     <div class="container">
-      <h1 class="display-1" id="splashtext">Welcome to Lively</h1>
+      <h1 class="display-2" id="splashtext">Welcome to Lively</h1>
       <p class="lead" id="splashtext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
         Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
           <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
+    </div>
+  </div>
+
+  <div class ="d-lg-none" id="splashmobile"> <!-- on screens wider than lg breakpoint (as defined by Bootstrap), hide the splashmobile div-->
+    <div class="container">
+      <h1 class="display-4" id="splashmobiletext">Welcome to Lively</h1>
+      <p class="lead" id="splashmobiletext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
+        Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
+      <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
     </div>
   </div>
 
