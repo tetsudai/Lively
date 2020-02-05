@@ -28,10 +28,38 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #343538;
+    background-color: #343A40;
+}
+
+
+#splash {
+    background: rgba(52, 58, 64, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+#splashbutton {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#splashtext {
+    text-align: center;
+    color: #ffffff
+}
+
+#topnav {
+    background: rgba(52, 58, 64, 0.7);
 }
 
 /* BACKGROUNDS */
+
 /*
 https://codepen.io/theiwaz/pen/vybjc
 See issue #2 and #12 on GitHub (aidswidjaja/Lively)
@@ -39,68 +67,52 @@ Android/Chromium bugs: https://issuetracker.google.com/issues/36908439, https://
 
 and the solution used here:
 https://css-tricks.com/forums/topic/full-page-backgrounds-on-ios-background-size-cover/page/2/#post-134002
-*/
 
-/* 
 REMINDER: Use `../res/filenamehere.jpg` as this stylesheet is stored within the `css` directory,
 and the filepath is relative to the current directory. See README (Development Notes) for more information.
 */
 
-/* I know that the `!important` tag is looked down upon in the web development world, but I need to avoid conflicts with `bootstrap.css` and the above `.bg` class. */
+/* Custom CSS can be applied to different background images below. */
 
 .bg1 { 
     background-image: url(../res/ichi.jpg) !important;
-	color: #ffffff !important;
 }
 .bg2 {
     background-image: url(../res/ni.jpg) !important; 
-    color: #ffffff !important;
 }
 .bg3 {
     background-image: url(../res/san.jpg) !important;  
-	color: #ffffff !important;
-}
+=}
 .bg4 {
     background-image: url(../res/yon.jpg) !important;  
-	color: #343538 !important;
-}
+=}
 .bg5 {
     background-image: url(../res/go.jpg) !important;  
-	color: #ffffff !important;
 }
 .bg6 {
     background-image: url(../res/roku.jpg) !important;  
-	color: #ffffff !important;
 }
 .bg7 {
     background-image: url(../res/nana.jpg) !important; 
-	color: #343538 !important;
 }
 .bg8 {
     background-image: url(../res/hachi.jpg) !important;
-	color: #ffffff !important;
 }
 .bg9 {
     background-image: url(../res/kyuu.jpg) !important;
-	color: #ffffff !important;
 }
 .bg10 {
     background-image: url(../res/juu.jpg) !important;
-	color: #ffffff !important;
 }
 .bg11 {
     background-image: url(../res/juu-ichi.jpg) !important;  
-	color: #ffffff !important;
 }
 .bg12 {
     background-image: url(../res/juu-ni.jpg) !important;
-	color: #343538 !important;
 }
 .bg13 {
     background-image: url(../res/juu-san.jpg) !important;
-	color: #ffffff !important;
 }
 .bg14 {
     background-image: url(../res/juu-yon.jpg) !important;
-	color: #ffffff !important;
 }
