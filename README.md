@@ -6,7 +6,7 @@ Contact aidswidjaja#2805 on Discord for more information.
 #### Current filepath: ~/README.md
 #### Current status: in-progress
 
-Hi! This README is intended for future developers of this website. It presumes a basic understanding of:
+Hi! This README is intended for future developers of this static website. It presumes a basic understanding of:
 
 - HTML5, JSON, CSS3, JS and DOM [(Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - Bootstrap 4 and HTML5 Boilerplate
@@ -175,19 +175,21 @@ For some reason, this solution seems to work – I'm not sure why, but it was la
 - Firefox Developer Edition 73.0b8 (64-bit)
 - Opera 63.0.3368.94
 
-**Desktop configuration:**
+**DESKTOP CONFIG:**
 ```
 ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G103
 ```
 
+***
+
 **ANDROID:**
 - Chrome for Android 79.0.3945.136
 - Firefox Nightly for Android 68.5a1 (2020-01-20)
 - Firefox Preview Nightly 200126 6:00 (Build #20260605) 29.0.0, c3ba2ed42, GV: 74.0a1-20200123095433, Sunday 1/26 @ 6:05 AM
 
-**Android configuration:**
+**ANDROID CONFIG:**
 ```
 Android 9
 SM-A105G 
@@ -195,8 +197,12 @@ Build/PPR1.180610.011
 (64-bit CPU, 32-bit arch) - yes, that means no Pokemon Masters for me I get it okay???
 ```
 
+***
+
 **iOS:**
 - Safari on iOS 12, iPhone 6
+
+***
 
 Although the following have not been tested, I am expecting compatibility with:
 
@@ -205,8 +211,8 @@ Although the following have not been tested, I am expecting compatibility with:
 
 I cannot guarantee compatibility with:
 
-- Internet Explorer 9<
-- Microsoft non-Chromium based Edge
+- Internet Explorer <9
+- Microsoft non-Chromium based Edge (Trident)
 
 however, they should in theory work because they support `background-attachment` and `background-size`.
 
