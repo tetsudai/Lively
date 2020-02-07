@@ -8,7 +8,7 @@ https://github.com/aidswidjaja
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh; /* maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
 }
 
 html {
