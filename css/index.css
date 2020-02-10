@@ -8,7 +8,7 @@ https://github.com/aidswidjaja
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* height will resize when address bar disappears - this appears to be a fixed behaviour in Chrome 80 that was released 7 Feb 2020 | maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
+    height: 100vh; /* height will resize when address bar disappears - this appears to be a fixed behaviour in Chrome 80 that was released 7 Feb 2020 | maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
     overflow-y: scroll; /* see https://stackoverflow.com/a/49278385/6299634 */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -43,7 +43,7 @@ body {
 
 #splash {
     background: rgba(52, 58, 64, 0.7);
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     position: absolute;
@@ -56,7 +56,6 @@ body {
 
 #splashmobile {
     background: rgba(52, 58, 64, 0.7);
-    position: absolute;
     height: 100vh; /* maintains compatibility with mobile devices with address bars */
     width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
     text-align: left;
