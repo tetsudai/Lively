@@ -14,7 +14,6 @@ html, body {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
-
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -44,20 +43,20 @@ body {
 
 #splash {
     background: rgba(52, 58, 64, 0.7);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     text-align: center;
     overflow: hidden;
-
-
 }
 
 #splashmobile {
     background: rgba(52, 58, 64, 0.7);
+    position: absolute;
     height: 100vh; /* maintains compatibility with mobile devices with address bars */
     width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
     text-align: left;
