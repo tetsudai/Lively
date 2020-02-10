@@ -8,8 +8,19 @@ https://github.com/aidswidjaja
 html, body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
+    height: 110%; /* maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
+    overflow-y: scroll; /* see https://stackoverflow.com/a/49278385/6299634 */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 
 html {
     overflow: hidden;
@@ -35,12 +46,14 @@ body {
     background: rgba(52, 58, 64, 0.7);
     height: 100%;
     width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+
+
 }
 
 #splashmobile {
