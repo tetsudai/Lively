@@ -8,13 +8,13 @@ https://github.com/aidswidjaja
 
 <head>
   <meta charset="utf-8">
-  <title>Lively | Home</title>
+  <title>Lively | Disclaimer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="icon" type="image/png" href="../favicon.ico">
   <meta name="theme-color" content="#fafafa">
 
   <!-- CDN: Bootstrap JQuery, Popper.js | Local: JS, CSS -->
@@ -24,16 +24,16 @@ https://github.com/aidswidjaja
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="js/bootstrap.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/index.css">
+  <script src="../js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/index.css">
 
   <!-- Background Image Randomiser courtesy of Paul Lockett https://paul-lockett.co.uk/randombackground.html REQUIRES JAVASCRIPT AND CSS-->
   <!-- Responsive Background Image courtesy of Jennifer Kyrnin https://www.lifewire.com/responsive-background-images-3467001 REQUIRES CSS3-->
 
-  <script src="js/backgr.js"></script>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/backgr.css">
+  <script src="../js/backgr.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/backgr.css">
 
 </head>
 
@@ -42,8 +42,8 @@ https://github.com/aidswidjaja
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark" id="topnav">
-    <a class="navbar-brand" href="#">
-      <img src="res/lively.png" width="64" height="64" alt="Lively logo">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../res/lively.png" width="64" height="64" alt="Lively logo">
     </a>
 
     <button class="navbar-toggler btn btn-outline-info" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,40 +52,32 @@ https://github.com/aidswidjaja
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav">
-        <a id="navcolour" class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-        <a id="navcolour" class="nav-item nav-link" href="pages/about.html">About Us</a>
-        <a id="navcolour" class="nav-item nav-link" href="pages/disclaimer.html">Disclaimer</a>
+        <a id="navcolour" class="nav-item nav-link" href="../index.html">Home</a>
+        <a id="navcolour" class="nav-item nav-link" href="../pages/about.html">About Us</a>
+        <a id="navcolour" class="nav-item nav-link active" href="#">Disclaimer<span class="sr-only">(current)</span></a>
         <a id="navcolour" class="nav-item nav-link" href="https://trello.com/b/U3EgslJI/lively-rules">Server Rules</a>
-        <a id="navcolour" class="nav-item nav-link" href="pages/hotlines.html">Hotlines</a>
-        <a id="navcolour" class="nav-item nav-link" href="pages/breathe.html">Breathe</a>
+        <a id="navcolour" class="nav-item nav-link" href="../pages/hotlines.html">Hotlines</a>
+        <a id="navcolour" class="nav-item nav-link" href="../pages/breathe.html">Breathe</a>
         <p id="navcolour" class="nav-item nav-link disabled" style="float: right;">© Lively 2020</p>
       </div>
     </div>
   </nav>
 
-  <!-- Splash Text -->
-
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div class="d-none d-lg-flex" id="splash"> <!-- on screens less wide than lg breakpoint (as defined by Bootstrap), hide the splash div-->
-    <div class="container">
-      <h1 class="display-2" id="splashtext">Welcome to Lively</h1>
-      <p class="lead" id="splashtext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
-        Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
-          <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
-    </div>
+  <div id="page">  <!-- on screens less wide than lg breakpoint (as defined by Bootstrap), hide the splash div-->
+    <h1 class="display-4" id="pagetext">Disclaimer</h1>
+    <h2 class="content" id="pagetext">Lively is in no way an economic community which provides legal and professional help.
+        All help provided here is non-professional by hobbyist counsellors.
+        The help provided here is not to be taken as a replacement for professional help.
+        In situations including crisis, professional help sources will be linked to the user by a member of the Helping Hands team.
+        In case of a legal dispute, we hold no responsibility for any loss caused to anyone.
+    </h2>
   </div>
 
-  <div class ="d-lg-none" id="splashmobile"> <!-- on screens wider than lg breakpoint (as defined by Bootstrap), hide the splashmobile div-->
-    <div class="container">
-      <h1 class="display-4" id="splashmobiletext">Welcome to Lively</h1>
-      <p class="lead" id="splashmobiletext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
-        Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
-      <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
-    </div>
-  </div>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
   <script>

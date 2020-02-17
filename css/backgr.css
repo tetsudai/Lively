@@ -1,0 +1,60 @@
+/* BACKGROUNDS */
+
+/*
+https://codepen.io/theiwaz/pen/vybjc
+See issue #2 and #12 on GitHub (aidswidjaja/Lively)
+Android/Chromium bugs: https://issuetracker.google.com/issues/36908439, https://bugs.chromium.org/p/chromium/issues/detail?id=344338
+
+and the solution used here:
+https://css-tricks.com/forums/topic/full-page-backgrounds-on-ios-background-size-cover/page/2/#post-134002
+
+Also see: https://bugs.chromium.org/p/chromium/issues/detail?id=175502, https://bugs.webkit.org/show_bug.cgi?id=153852
+
+REMINDER: Use `../res/filenamehere.jpg` as this stylesheet is stored within the `css` directory,
+and the filepath is relative to the current directory. See README (Development Notes) for more information.
+*/
+
+/* Custom CSS can be applied to different background images below. */
+
+.bg1 { 
+    background-image: url(../res/ichi.jpg) !important;
+}
+.bg2 {
+    background-image: url(../res/ni.jpg) !important; 
+}
+.bg3 {
+    background-image: url(../res/san.jpg) !important;  
+}
+.bg4 {
+    background-image: url(../res/yon.jpg) !important;  
+}
+.bg5 {
+    background-image: url(../res/go.jpg) !important;  
+}
+.bg6 {
+    background-image: url(../res/roku.jpg) !important;  
+}
+.bg7 {
+    background-image: url(../res/nana.jpg) !important; 
+}
+.bg8 {
+    background-image: url(../res/hachi.jpg) !important;
+}
+.bg9 {
+    background-image: url(../res/kyuu.jpg) !important;
+}
+.bg10 {
+    background-image: url(../res/juu.jpg) !important;
+}
+.bg11 {
+    background-image: url(../res/juu-ichi.jpg) !important;  
+}
+.bg12 {
+    background-image: url(../res/juu-ni.jpg) !important;
+}
+.bg13 {
+    background-image: url(../res/juu-san.jpg) !important;
+}
+.bg14 {
+    background-image: url(../res/juu-yon.jpg) !important;
+}
