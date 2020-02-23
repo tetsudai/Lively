@@ -46,11 +46,9 @@ body {
 }
 
 #splash {
-    background: rgba(52, 58, 64, 0.7);
     min-height: 100%;
     width: 100%;
     display: flex;
-    position: absolute;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
@@ -59,7 +57,6 @@ body {
 }
 
 #splashmobile {
-    background: rgba(52, 58, 64, 0.7);
     height: 100vh; /* maintains compatibility with mobile devices with address bars */
     width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
     text-align: left;
@@ -81,17 +78,15 @@ body {
 }
 
 #page {
-    background: rgba(52, 58, 64, 0.7);
-    min-height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
     align-items: center; 
     text-align: center;
 }
 
 #pagemobile {
-    background: rgba(52, 58, 64, 0.7);
-    height: 100vh; /* maintains compatibility with mobile devices with address bars */
-    width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
+    min-height: 100vh; /* maintains compatibility with mobile devices with address bars */
+    min-width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
     align-items: center; 
     text-align: center;
 }
@@ -103,8 +98,4 @@ body {
 
 #hotlinelink {
     margin: 5px;
-}
-
-#topnav {
-    background: rgba(52, 58, 64, 0.7);
 }
