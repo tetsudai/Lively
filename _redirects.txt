@@ -1,0 +1,9 @@
+# For simpler URLs on Netlify-hosted static sites, like the Lively Discord website (as of 25 Feb 2020), we use a _redirects file. 
+# It is similar to a .htaccess file on Apache/nginx systems
+# See https://docs.netlify.com/routing/redirects/#syntax-for-the-redirects-file for more info
+
+# INPUT					# OUTPUT
+/about					/pages/about.html
+/disclaimer				/pages/disclaimer.html
+/hotlines				/pages/hotlines.html
+/breathe				/pages/breathe.html

@@ -9,7 +9,7 @@ Contact aidswidjaja#2805 on Discord for more information.
 Hi! This README is intended for future developers of this static website. It presumes a basic understanding of:
 
 - HTML5, JSON, CSS3, JS and DOM [(Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-- Bootstrap 4 and HTML5 Boilerplate
+- Bootstrap 4 (TWBS) and HTML5 Boilerplate (H5BP)
 - CDNs for scripts and images
 - Static website hosting on GitHub Pages, Netlify and Heroku
 - Git on the command line (you may be able to use SVN but this will not be covered in this README)
@@ -30,11 +30,11 @@ As of 27 Jan, this documentation is a **Work in Progress**. It is not complete, 
     - Find the most recent version of this website
     - Deploying this site on your local production machine
     - Other things to note
+- Filesystem
 - Layout
-    - Layout
+    - Background Image
 - Mobile responsiveness
-- CDN link descriptions
-- Hosting
+- Deployment
 
 ***
 
@@ -96,10 +96,41 @@ This [MDN web doc](https://developer.mozilla.org/en-US/docs/Learn/Common_questio
 - Already implemented analytics. Check through the code and see if there are any variables that need to be changed. You also might need to investigate environment variables that may have been used but not documented.
 - `.gitignore` – Are there any files that were excluded from Git?
 - `LICENSE` – Are you adhering by the rules of the GPL-3.0 license (or any other additional legal requirements)? 
+- At time of writing, the active domain for the site is `https://livelydiscord.netlify.com` - more information in [Deployment](#deployment).
 
 >My local jurisdiction is NSW, Australia, but I'd also suggest looking at US for especially with DMCA, GPL, Git, and hosting services such as Heroku and Netlify if you're concerned, as well as EU GDPR and India, where this Discord server is located.
 
 Once you're happy with your development environment, you can proceed to the next section!
+
+***
+
+### Filesystem
+
+Here is what the filesystem should look like:
+
+```
+404.html                # generic H5BP 404 page - if using GitHub Pages you will need to set YAML front matter
+assets                  # contains all base assets - mostly .zip files
+browserconfig.xml       # H5BP-related
+css                     # contains all css resources from Bootstrap (H5BP CSS has been deleted from the css folder, see )
+    social
+doc
+favicon.ico
+H5BP-LICENSE.txt
+humans.txt
+icon.png
+index.html
+js
+LICENSE
+pages
+readme
+README.md
+res
+robots.txt
+site.webmanifest
+tile-wide.png
+tile.png
+```
 
 ***
 
@@ -174,6 +205,7 @@ For some reason, this solution seems to work – I'm not sure why, but it was la
 - Chrome Version 79.0.3945.130 (Official Build) (64-bit)
 - Firefox Developer Edition 73.0b8 (64-bit)
 - Opera 63.0.3368.94
+- Microsoft Edge 80.0.361.54 (Official build) (64-bit)
 
 **DESKTOP CONFIG:**
 ```
@@ -207,15 +239,11 @@ Build/PPR1.180610.011
 Although the following have not been tested, I am expecting compatibility with:
 
 - Chrome for iOS
-- Chromium-based Edge
 
 I cannot guarantee compatibility with:
 
 - Internet Explorer <9
 - Microsoft non-Chromium based Edge (Trident)
 
-however, they should in theory work because they support `background-attachment` and `background-size`.
-
 ***
 
-_To be continued_
