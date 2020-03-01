@@ -4,7 +4,9 @@ Contact aidswidjaja#2805 on Discord for more information.
 
 # Development Notes (for future developers) - a comprehensive guide to how this website works
 #### Current filepath: ~/README.md
-#### Current status: in-progress
+#### Current status: not supported (see below)
+
+###### NB: As of 2 March 2020 this project is not being actively worked upon. These development notes are incomplete and will not be finished in the future. If you have any questions, please contact me on Discord for more info. Thanks!
 
 Hi! This README is intended for future developers of this static website. It presumes a basic understanding of:
 
