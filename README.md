@@ -4,7 +4,9 @@ Contact aidswidjaja#2805 on Discord for more information.
 
 # Development Notes (for future developers) - a comprehensive guide to how this website works
 #### Current filepath: ~/README.md
-#### Current status: in-progress
+#### Current status: `stable|release|final`
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5126413d-b774-4507-bf60-c9e6ead602d4/deploy-status)](https://app.netlify.com/sites/livelydiscord/deploys)
 
 Hi! This README is intended for future developers of this static website. It presumes a basic understanding of:
 
@@ -23,7 +25,7 @@ If you're a standard end user, this guide isn't for you. Check with the owner of
 
 ### Table of Contents
 
-As of 27 Jan, this documentation is a **Work in Progress**. It is not complete, but will be completed sometime in the foreseeable future.
+As of 25 Jan 2020, this website's state is `stable|release|final`.
 
 - Background
 - Getting started and dependencies
@@ -33,6 +35,12 @@ As of 27 Jan, this documentation is a **Work in Progress**. It is not complete, 
 - Filesystem
 - Layout
     - Background Image
+		- Supported configurations
+	- Navbar
+		- Social buttons
+	- Utilities
+		- Fonts
+		- `vh, vw, %` and breakpoints
 - Mobile responsiveness
 - Deployment
 
@@ -109,27 +117,28 @@ Once you're happy with your development environment, you can proceed to the next
 Here is what the filesystem should look like:
 
 ```
-404.html                # generic H5BP 404 page - if using GitHub Pages you will need to set YAML front matter
-assets                  # contains all base assets - mostly .zip files
-browserconfig.xml       # H5BP-related
-css                     # contains all css resources from Bootstrap (H5BP CSS has been deleted from the css folder, see )
-    social
-doc
-favicon.ico
-H5BP-LICENSE.txt
-humans.txt
-icon.png
-index.html
-js
-LICENSE
-pages
-readme
-README.md
-res
-robots.txt
-site.webmanifest
-tile-wide.png
-tile.png
+.
+    404.html                # generic H5BP 404 page - if using GitHub Pages you will need to set YAML front matter
+    assets                  # contains all base assets - mostly .zip files
+    browserconfig.xml       # H5BP-related
+    css                     # contains all css resources from Bootstrap (H5BP CSS has been deleted from the css folder, see [Bootstrap Documentation](https://getbootstrap.com/docs/4.4/getting-started/contents/#css-files))
+        social              # contains all css resources for Zocial, the CSS social buttons add-on available on [GitHub](https://github.com/smcllns/css-social-buttons) - some files modified
+    doc                     # H5BP-related
+    favicon.ico             # website favicon
+    H5BP-LICENSE.txt        # H5BP-related
+    humans.txt              # SEO-related (H5BP)
+    icon.png                # H5BP-related
+    index.html              # front page
+    js                      # contains all js resources from Bootstrap (see [Bootstrap Documentation](https://getbootstrap.com/docs/4.4/getting-started/javascript/))
+    LICENSE                 # GPL v3.0             
+    README.md               # this file
+    res                     # resources the website uses, such as images. Contains darkened backgrounds based on images in base - more info in Background Image
+        base         		# contains original, non-darkened assets of background images       
+    robots.txt				# SEO-related (H5BP)
+    site.webmanifest		# H5BP-related
+    tile-wide.png			# H5BP-related
+    tile.png				# H5BP-related
+    <pages>                 # site pages (.html) are kept in the root directory because of two reasons: a) Netlify does not read the _redirects file for some reason for a cleaner URL; b) portability to different hosting providers
 ```
 
 ***
@@ -158,6 +167,8 @@ A function defined in `js/backgr.js` executes the following instruction set :
 `document.getElementById` loads class names `bgx` and `bg`, where `x` is an integer between 1 and 14 inclusive. 
 - `bgx` defines `background-image: url(...` and other background-specific attributes.
 - `bg` are common attributes that apply to all backgrounds.
+
+**The `res` folder is the directory which `backgr()` extracts images from, to display on the website as a background. These images are darkened versions of the original images located in the `base` subdirectory. They contain a `rgba(52, 58, 64, 0.7)` layer over them (using Krita).
 
 The problem with `bg` is that it uses the following CSS attributes:
 
@@ -214,6 +225,8 @@ ProductVersion:	10.14.6
 BuildVersion:	18G103
 ```
 
+in addition to `Windows 10 Pro 1909 64-bit`.
+
 ***
 
 **ANDROID:**
@@ -246,4 +259,45 @@ I cannot guarantee compatibility with:
 - Microsoft non-Chromium based Edge (Trident)
 
 ***
+
+#### Navbar
+
+The Navbar is a default Bootstrap Navbar that has the following properties:
+
+- Copyright © message: `© Lively 2020` is a disabled `<p>`
+- It is mobile responsive, with changes occuring at presumably the `lg` breakpoint
+- 100% transparent
+- Contains the Lively logo
+- Contains social buttons from [smcllns/css-social-buttons](https://github.com/smcllns/css-social-buttons)
+
+##### Social buttons 
+
+The Lively website contains social buttons in the Navbar from a CSS/HTML-only bundle (that has been modified to reflect modern web design). Notably, gradients are commented out in the core files.
+
+The five buttons and their associated class names are listed, in order (according to the official information on the Lively Discord server information channel):
+
+- `twitter`
+- `instagram`
+- `facebook`
+- `stackoverflow` but this represents the Medium blog for which there is no button for
+- `discordapp`
+
+These buttons also work lg> breakpoint, however, they appear stacked in the mobile Menu dropdown on the Navbar, which is a real waste of screen real estate!
+
+To respect differences between the desktop and mobile versions of the Menu, separate code (placed inside and outside the `.navbar-nav` div respectively, and using `d-lg-none` and `d-lg-inline` respectively) is used for desktop and mobile viewports.
+
+Usage:
+
+```HTML
+<a href="https://discord.gg/hv7u9bT" class="zocial discordapp icon d-lg-none"></a>				# d-lg-none 	| "desktop-sized window"
+<a href="https://discord.gg/hv7u9bT" class="zocial discordapp icon d-none d-lg-inline"></a>		# d-lg-inline 	| "mobile-sized window"
+```
+
+***
+
+#### Utilities
+
+##### Fonts
+
+
 
