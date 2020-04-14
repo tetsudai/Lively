@@ -4,9 +4,12 @@ Contact aidswidjaja#2805 on Discord for more information.
 
 # Development Notes (for future developers) - a comprehensive guide to how this website works
 #### Current filepath: ~/README.md
+<<<<<<< HEAD
 #### Current status: `stable|release|final`
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5126413d-b774-4507-bf60-c9e6ead602d4/deploy-status)](https://app.netlify.com/sites/livelydiscord/deploys)
+
+DevNotes are not actively maintained - however website receives minor updates from time to time.
 
 Hi! This README is intended for future developers of this static website. It presumes a basic understanding of:
 
