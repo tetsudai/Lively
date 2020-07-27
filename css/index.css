@@ -20,7 +20,6 @@ html, body {
     display: none;
 }
 
-
 html {
     overflow: hidden;
 }
@@ -98,4 +97,39 @@ body {
 
 #hotlinelink {
     margin: 5px;
+}
+
+/* flex */
+/* https://css-tricks.com/almanac/properties/f/flex-wrap/ */
+
+.wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100px;
+    text-align: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -ms-box-orient: horizontal;
+  list-style: none;
+}
+
+.teamimg {
+    height: 350px;
+    margin: 50;
+
+}
+
+.teamtext {
+    color: #ffffff;
+}
+
+.flex-item {
+    margin: 100px;
 }
