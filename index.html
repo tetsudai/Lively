@@ -29,31 +29,34 @@ https://github.com/aidswidjaja
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
 
-  <!-- Background Image Randomiser courtesy of Paul Lockett https://paul-lockett.co.uk/randombackground.html REQUIRES JAVASCRIPT AND CSS-->
-  <!-- Responsive Background Image courtesy of Jennifer Kyrnin https://www.lifewire.com/responsive-background-images-3467001 REQUIRES CSS3-->
 
   <script src="js/backgr.js"></script>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/backgr.css">
   <link rel="stylesheet" href="css/social/css/zocial.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
-<body id="bod" onload="backgr()">
+<body id="bod">
 
-  <!-- Navbar -->
+  <!-- Navbar start -->
 
   <nav class="navbar navbar-expand-lg navbar-dark" id="topnav">
     <a class="navbar-brand" href="#">
       <img src="res/lively.png" width="64" height="64" alt="Lively logo">
     </a>
 
-    <button class="navbar-toggler btn btn-outline-info" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler btn btn-outline-info" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       Menu
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav">
+        <a class="navbar-brand" href="#">Lively</a>
         <a id="navcolour" class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
         <a id="navcolour" class="nav-item nav-link" href="about.html">About Us</a>
         <a id="navcolour" class="nav-item nav-link" href="team.html">Team</a>
@@ -61,53 +64,100 @@ https://github.com/aidswidjaja
         <a id="navcolour" class="nav-item nav-link" href="https://trello.com/b/U3EgslJI/lively-rules">Server Rules</a>
         <a id="navcolour" class="nav-item nav-link" href="hotlines.html">Hotlines</a>
         <a id="navcolour" class="nav-item nav-link" href="breathe.html">Breathe</a>
-        <p id="navcolour" class="nav-item nav-link disabled" style="float: right;">© Lively 2020</p>
-        <a href="http://twitter.com/livelydiscord" class="zocial twitter icon d-lg-none"></a>
-        <a href="http://instagram.com/livelydiscord" class="zocial instagram icon d-lg-none"></a>
-        <a href="https://www.facebook.com/livelydiscord" class="zocial facebook icon d-lg-none"></a>
-        <a href="https://medium.com/livelydiscord" class="zocial stackoverflow icon d-lg-none"></a>
-        <a href="https://discord.gg/hv7u9bT" class="zocial discordapp icon d-lg-none"></a>
       </div>
     </div>
-    <a href="http://twitter.com/livelydiscord" class="zocial twitter icon d-none d-lg-inline"></a>
-    <a href="http://instagram.com/livelydiscord" class="zocial instagram icon d-none d-lg-inline"></a>
-    <a href="https://www.facebook.com/livelydiscord" class="zocial facebook icon d-none d-lg-inline"></a>
-    <a href="https://medium.com/livelydiscord" class="zocial stackoverflow icon d-none d-lg-inline"></a>
-    <a href="https://discord.gg/hv7u9bT" class="zocial discordapp icon d-none d-lg-inline"></a>
-
   </nav>
 
+  <!-- Navbar end -->
 
-  <!-- Splash Text -->
+  <div class="indexjumbo">
+    <br>
+    <div class="container indexcontainer">
+      <h1 class="mt-1 indexheader">We're here for <span class="livelypurple">you.</span></h1>
+      <p class="indexlead">
+        Lively is a server based on providing assistance related to mental health. We strongly believe that the people
+        who need someone to talk to definitely deserve to be treated better.
+        <b>Here at Lively, we aim at listening to you and helping you out in every possible way.</b><br><br>
+        <a href="https://discord.gg/hv7u9bT" class="btn btn-lg btn-outline-dark" id="splashbutton">Join us on
+          Discord</a>
+      <p class="indexlead" style="font-size: 10px;">You need to be 13 or over to use Discord.</p>
+      </p>
+      <!-- Cards -->
+      <!-- ichi-->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Learn more about our community 💜 </h5>
+              <p class="card-text">Lively is a mental health server on Discord with over 1000 members, and we invite you
+                to learn about what our community has to offer and how we're providing mental care to people across the
+                world.</p>
+              <a href="about.html" class="btn btn-index">Learn more about us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Meet the team 👋 </h5>
+              <p class="card-text">We have an active and well-trained staff team of moderators, supporters and event
+                staff that all take on different roles in the server, but we have the shared goal of making Lively a
+                safe and welcoming community for all.</p>
+              <a href="team.html" class="btn btn-index">Meet the team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ni -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Familiarise yourself with our rules 🔒 </h5>
+              <p class="card-text">To provide a better experience for everyone, including you, we have server-wide rules
+                to ensure that Lively remains a safe space. We also enforce Discord's <a
+                  href="https://discord.com/terms">Terms of Service</a> and <a
+                  href="https://discord.com/guidelines">Community
+                  Guidelines.</a>
+              </p>
+              <a href="https://trello.com/b/U3EgslJI/lively-rules" class="btn btn-index">See our server rules</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Crisis resources 🚨 </h5>
+              <p class="card-text">Lively cannot provide crisis support, however, there are free, anonymous and
+                professional 24/7
+                crisis hotlines. If you need someone to talk to, find one in your country below. You can also find
+                crisis
+                resources in #resources on our Discord.
+              </p>
+              <a href="hotlines.html" class="btn btn-danger btn-dangerindex">Visit crisis resources</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <div class="d-none d-lg-flex" id="splash"> <!-- on screens less wide than lg breakpoint (as defined by Bootstrap), hide the splash div-->
-    <div class="container">
-      <h1 class="display-2" id="splashtext">Welcome to Lively</h1>
-      <p class="lead" id="splashtext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
-        Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
-          <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
     </div>
   </div>
-
-  <div class ="d-lg-none" id="splashmobile"> <!-- on screens wider than lg breakpoint (as defined by Bootstrap), hide the splashmobile div-->
-    <div class="container">
-      <h1 class="display-4" id="splashmobiletext">Welcome to Lively</h1>
-      <p class="lead" id="splashmobiletext">Lively is a server based on providing assistance related to mental health. We strongly believe that the people who need someone to talk to definitely deserve to be treated better.
-        Here at Lively, we aim at listening to you and helping you out in every possible manner.</p>
-      <a href="https://discord.gg/hv7u9bT"class="btn btn-lg btn-outline-light" id="splashbutton">Join our Discord</a>
+  <!-- Footer start -->
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0" id="copyright">Copyright © Lively 2020<br>Join us at <a
+        href="https://discord.is/lively" id="copyrightlink">discord.is/lively</a></span>
+    <div class="socialnav">
+      <a href="http://twitter.com/livelydiscord"><img class="social" src="res/social/twitter.png"
+          style="height: 50px;"></a>
+      <a href="http://instagram.com/livelydiscord"><img class="social" src="res/social/instagram.png"
+          style="height: 30px;"></a>
+      <a href="https://medium.com/livelydiscord"><img class="social" src="res/social/medium.png"
+          style="height: 45px;"></a>
+      <a href="https://discord.gg/hv7u9bT"><img class="social" src="res/social/discord.svg" style="height: 35px;"></a>
     </div>
-  </div>
+  </nav>
+  <!-- Footer end-->
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
 </body>
 
 </html>

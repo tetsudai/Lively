@@ -3,7 +3,7 @@ Made with ❤️ and 🐼 by Adrian W (aidswidjaja#2805) under the GPL-3.0 licen
 https://github.com/aidswidjaja
 */
 
-/* MASTER */
+/* Primary */
 
 html, body {
     margin: 0;
@@ -12,6 +12,8 @@ html, body {
     overflow-y: scroll; /* see https://stackoverflow.com/a/49278385/6299634 */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    color: #343A40;
+    font-family: 'Lato', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +31,20 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.navbar {
+    background-color: #202125;
+    font-weight: 900;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.nav-item {
+    font-size: 18px;
+    padding-top: 23px;
+}
+
 .bg {
     background-position: center center;
 	background-repeat: no-repeat;
@@ -41,8 +57,34 @@ body {
 }
 
 .content {
-    margin: 10%;
+    padding:0;
 }
+
+.divcontent {
+    padding: 100px;
+}
+
+/* Text */
+
+h1, .display-4 {
+    font-weight: 900;
+    font-size: 72px;
+    text-align: left;
+}
+
+.bannerh1 {
+    font-weight: 900;
+    font-size: 45px;
+    text-align: left;
+}
+
+.aboutflex {
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+}
+
+/* Splash */
 
 #splash {
     min-height: 100%;
@@ -63,7 +105,7 @@ body {
 
 #splashmobiletext {
     text-align: left;
-    color: #ffffff
+    color: #343A40
 }
 
 #splashbutton {
@@ -73,33 +115,55 @@ body {
 
 #splashtext {
     text-align: center;
-    color: #ffffff
+    color: #343A40
 }
 
 #page {
     min-height: 100vh;
     min-width: 100%;
-    align-items: center; 
-    text-align: center;
 }
 
 #pagemobile {
     min-height: 100vh; /* maintains compatibility with mobile devices with address bars */
     min-width: 100%; /* maintains compatibility with Navbar and desktop scroll bars */
-    align-items: center; 
-    text-align: center;
 }
 
 #pagetext {
-    text-align: center;
-    color: #ffffff
+    color: #343A40;
+    margin: 100px;
 }
 
 #hotlinelink {
     margin: 5px;
 }
 
-/* flex */
+/* Cards */
+
+.card-title {
+    font-weight: 900;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.btn-index {
+    background-color: #7866ff;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.btn-index:hover {
+    background-color: #a296fa;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.btn-dangerindex {
+    font-weight: 900;
+}
+
+/* Flex */
 /* https://css-tricks.com/almanac/properties/f/flex-wrap/ */
 
 .wrap {
@@ -127,9 +191,94 @@ body {
 }
 
 .teamtext {
-    color: #ffffff;
+    color: #343A40;
 }
 
 .flex-item {
     margin: 100px;
+}
+
+/* Misc */
+
+.indexheader {
+    font-weight: 900;
+    font-size: 70px;
+    color: #000;
+}
+
+.indexlead {
+    font-size: 20px;
+    color: #000;
+}
+
+.indextextoof {
+    margin-top: 300px;
+}
+
+.indexcontainer {
+    margin-top: 50px;
+    padding: 75px;
+}
+
+.indexrow {
+    width: auto;
+}
+
+.indexjumbo {
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.indexjumbooof {
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1280px;
+}
+
+#oof {
+    color: #000;
+    margin: 25px;
+}
+
+.socialnav {
+    padding: 0;
+}
+
+#copyright {
+    color:#807F80;
+    font-size: 15px;
+}
+
+#copyrightlink {
+   color: #a296fa;
+}
+
+.aboutbanner {
+    background-color: #F6F6F6;
+    margin: 0;
+}
+
+.livelypurple {
+    color: #7866ff;
+}
+
+.rotatopotato {
+    transform: rotate(180deg);
+}
+
+.aboutready {
+    font-size: 30px;
+    text-align: center;
+}
+
+.joinbtn {
+    background-color: #43B581;
+    color: #ffffff;
+    font-weight: 900;
+    display: inline;
+    text-align: center;
 }
