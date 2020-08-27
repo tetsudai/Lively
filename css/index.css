@@ -72,6 +72,12 @@ h1, .display-4 {
     text-align: left;
 }
 
+.display-6 {
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+}
+
 .bannerh1 {
     font-weight: 900;
     font-size: 45px;
@@ -130,7 +136,7 @@ h1, .display-4 {
 
 #pagetext {
     color: #343A40;
-    margin: 50px;
+    margin: 40px;
 }
 
 #hotlinelink {
@@ -145,6 +151,10 @@ h1, .display-4 {
 
 .card {
     margin-bottom: 10px;
+}
+
+.cardteam {
+    border-radius: 5%
 }
 
 .btn-index {
@@ -187,11 +197,13 @@ h1, .display-4 {
 .teamimg {
     height: 350px;
     margin: 50;
-
+    border-radius: 5%;
 }
 
 .teamtext {
     color: #343A40;
+    text-align: center;
+    margin: 5px;
 }
 
 .flex-item {
@@ -281,4 +293,8 @@ h1, .display-4 {
     font-weight: 900;
     display: inline;
     text-align: center;
+}
+
+.team {
+    list-style-type: none;
 }
