@@ -10,16 +10,8 @@ html, body {
     padding: 0;
     height: 100vh; /* height will resize when address bar disappears - this appears to be a fixed behaviour in Chrome 80 that was released 7 Feb 2020 | maintains compatibility for Chrome for Android scrolling: see https://developers.google.com/web/updates/2016/12/url-bar-resizing */
     overflow-y: scroll; /* see https://stackoverflow.com/a/49278385/6299634 */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     color: #343A40;
     font-family: 'Lato', sans-serif;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
 }
 
 html {
