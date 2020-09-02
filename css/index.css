@@ -191,7 +191,8 @@ h1, .display-4 {
 }
 
 .teamimg {
-    height: 350px;
+    width: 250px;
+    height: 356.25px;
     margin: 50;
     border-radius: 5%;
 }
