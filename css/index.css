@@ -299,3 +299,12 @@ h1, .display-4 {
 .team {
     list-style-type: none;
 }
+
+.teambio {
+    color: #7866ff;
+}
+
+.teambio:hover {
+    color: #7866ff;
+    filter: brightness(75%);
+}
