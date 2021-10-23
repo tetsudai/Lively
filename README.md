@@ -5,6 +5,10 @@ Website for the Lively Discord server using HTML5, Bootstrap, and modern web tec
 - Made by [aidswidjaja](https://aidswidjaja.github.io)
 - [Join Lively](https://discord.is/lively)
 
+## Archive notice
+
+Thank you for your support of the Lively mental health community since 2019. As of 25 August 2021, the Lively website is no longer available online. After two successful years of operation, Lively's Discord server was deleted on 1 September 2021. Lively thanks the community and staff teams for making the community so memorable.
+
 ## Clone the repo
 
 ```bash
